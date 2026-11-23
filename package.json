@@ -1,0 +1,25 @@
+{
+  "name": "yellowstone-grpc-typescript-client",
+  "version": "1.0.0",
+  "description": "A minimal Yellowstone gRPC client in TypeScript: stream Solana slots and program transactions with server-side filters and ping keepalive.",
+  "type": "module",
+  "license": "MIT",
+  "scripts": {
+    "slots": "tsx src/slots.ts",
+    "stream": "tsx src/stream.ts",
+    "reconnect": "tsx src/reconnect.ts",
+    "typecheck": "tsc"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@triton-one/yellowstone-grpc": "10.0.0",
+    "bs58": "^6.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.7.0"
+  }
+}
